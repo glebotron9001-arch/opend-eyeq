@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPEND EYE INC</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        height: 100%;
+        width: 100%;
+        font-family: serif;
+    }
+
+    .hero {
+        height: 100vh;
+        width: 100%;
+        background-image: url("Frame 182748.png"); /* имя твоего файла */
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    /* Ноутбук / десктоп */
+    @media (min-width: 1024px) {
+        .hero {
+            background-position: center center;
+        }
+    }
+
+    /* Телефон — просто обрезаем края */
+    @media (max-width: 768px) {
+        .hero {
+            background-position: center;
+            background-size: 140%; /* увеличиваем, чтобы обрезались края */
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="hero"></div>
+</body>
+</html>
